@@ -542,7 +542,7 @@ const EDITION_SLUG = "ipc"; // machine-readable edition id, used for local-stora
    scores and certificate downloads to a Google Sheet. Leave blank to
    disable tracking entirely — nothing is sent anywhere in that case.
    See the accompanying Apps Script (tracking-script.gs) for setup. */
-const SHEET_WEBHOOK_URL = "";
+const SHEET_WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbwSQkeDt9hk3BTcpH46svBoeN8vunUZkK0EbJqHO0ppoW6ItriW34l7pxB4Es_UjqoF/exec";
 
 function sendTrackingEvent(eventType, payload){
   if(!SHEET_WEBHOOK_URL) return; // tracking disabled
